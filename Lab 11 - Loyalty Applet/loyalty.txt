@@ -1,0 +1,9 @@
+Cred ca am uitat sa dau save cand am trimis fisierele, la linia 252, trebuie sa fie astfel :
+
+short totaltempP = (short) ((short) (totalP) + (short) (debitAmount / 20));
+            
+            if(totaltempP > 10000) {
+                ISOException.throwIt((short) 0x6A84);
+            }
+            
+            totalP = totaltempP;
